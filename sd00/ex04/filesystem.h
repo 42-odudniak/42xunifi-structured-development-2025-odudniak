@@ -1,5 +1,5 @@
 #ifndef FILESYSTEM_H
-# define FILESYSTEM_H
+#define FILESYSTEM_H
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,12 +7,12 @@
 
 typedef struct SNode
 {
-	char			*name;
-	int				size;
+	char *name;
+	int size;
 
-	struct SNode	*sibling;
-	struct SNode	*children;
-}	FSNode;
+	struct SNode *sibling;
+	struct SNode *children;
+} FSNode;
 
 FSNode *create_file(const char *name, int size);
 FSNode *create_folder(const char *name);

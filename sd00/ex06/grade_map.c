@@ -29,7 +29,6 @@ GradeMapperReturn plusminus_mapper(int score)
 	if (score <= 89)
 		return ("B+");
 
-
 	if (score <= 92)
 		return ("A-");
 	if (score <= 96)
@@ -68,16 +67,16 @@ GradeMapperReturn standard_mapper(int score)
 void map_scores(const int *scores, int size,
 				GradeMapper mapper, const char **mapped_grades)
 {
-	for (int i = 0; i < size; i++){
+	for (int i = 0; i < size; i++)
+	{
 		mapped_grades[i] = mapper(scores[i]);
 	}
 }
 
-
 int main(void)
 {
 	// Change only the array values
-	const int	scores[] = {12, 53, 67, 57, 90, 99, 40};
+	const int scores[] = {12, 53, 67, 57, 90, 99, 40};
 
 	int size = sizeof(scores) / sizeof(scores[0]);
 
@@ -90,15 +89,15 @@ int main(void)
 	const char *mapped_standard_grades[size];
 	map_scores(scores, size, standard_mapper, mapped_standard_grades);
 
-	for (int i = 0; i < size; i++){
+	for (int i = 0; i < size; i++)
+	{
 		printf("[%d]\tscore[%d]:"
-			"\tplusminus=%s"
-			"\tpassfail=%s"
-			"\tstandard=%s\n",
-			i, scores[i],
-			mapped_plusminus_grades[i],
-			mapped_passfail_grades[i],
-			mapped_standard_grades[i]
-		);
+			   "\tplusminus=%s"
+			   "\tpassfail=%s"
+			   "\tstandard=%s\n",
+			   i, scores[i],
+			   mapped_plusminus_grades[i],
+			   mapped_passfail_grades[i],
+			   mapped_standard_grades[i]);
 	}
 }

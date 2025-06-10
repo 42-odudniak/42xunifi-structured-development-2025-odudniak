@@ -5,17 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef enum e_grade
-{
-	A,
-	B,
-	C,
-	D,
-	E,
-	F,
-} t_grade;
-
-typedef const char * GradeMapperReturn;
+typedef const char *GradeMapperReturn;
 
 typedef const char *(*GradeMapper)(int score);
 

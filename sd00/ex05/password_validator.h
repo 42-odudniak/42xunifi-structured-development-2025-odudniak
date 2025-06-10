@@ -9,7 +9,7 @@ typedef enum PwStatusEnum
 {
 	VALID,
 	INVALID
-}	PwStatus;
+} PwStatus;
 
 PwStatus validate_password(const char *new_pw, const char *curr_pw);
 
