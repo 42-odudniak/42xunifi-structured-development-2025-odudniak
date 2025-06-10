@@ -1,8 +1,10 @@
 {
-    "editor.renderWhitespace": "all",
-    "editor.insertSpaces": false,
-    "files.insertFinalNewline": true,
+	"editor.renderWhitespace": "all",
+	"editor.insertSpaces": false,
+	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
-    "files.autoSave": "onFocusChange",
-    "editor.rulers": [80]
+	"files.autoSave": "onFocusChange",
+	"editor.rulers": [
+		80,
+	],
 }
