@@ -8,6 +8,8 @@
 		  "# define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_${TM_FILENAME/(.*\\.)(.*)/${2:/upcase}/}",
 		  "#include <stdbool.h>",
 		  "#include <stdio.h>",
+		  "#include <stdlib.h>",
+		  "#include <string.h>",
 		  "${TM_SELECTED_TEXT}",
 		  "#endif",
 		  ""
