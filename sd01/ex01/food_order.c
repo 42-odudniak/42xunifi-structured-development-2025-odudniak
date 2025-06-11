@@ -11,9 +11,9 @@ int process_food_order(struct OrderRequest *request)
 		confirmation = create_standard_confirmation();
 
 	if (!confirmation)
-		return (0);
+		return 0;
 
 	send_confirmation_notification(confirmation);
 
-	return (1);
+	return 1;
 }
