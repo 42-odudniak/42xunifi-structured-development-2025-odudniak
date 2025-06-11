@@ -27,7 +27,7 @@ static void print_structure_impl(const FSNode *node, int indent, int level)
 
 	if (node->size == 0)
 	{
-		printf("📂 %s (%d)\n", node->name, compute_total_size((FSNode *)node));
+		printf("📂 %s (%d)\n", node->name, compute_total_size(node));
 
 		// Folder's children
 		for (FSNode *child = node->children; child; child = child->sibling)
