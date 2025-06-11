@@ -13,7 +13,7 @@ int sequence_size_until_block_end(const int *arr, int size, int start_idx)
 			return count;
 		count++;
 	}
-	return (count);
+	return count;
 }
 
 int count_segments(const int *arr, int size)
@@ -37,7 +37,7 @@ int count_segments(const int *arr, int size)
 			added = true;
 		}
 	}
-	return (result);
+	return result;
 }
 
 // int main()

@@ -3,9 +3,9 @@
 int compute_total_size(FSNode *node)
 {
 	if (!node)
-		return (0);
+		return 0;
 	if (node->size != 0)
-		return (node->size);
+		return node->size;
 
 	int result = node->size;
 	if (node->size == 0)
@@ -16,7 +16,7 @@ int compute_total_size(FSNode *node)
 		}
 	}
 
-	return (result);
+	return result;
 }
 
 static void print_structure_impl(const FSNode *node, int indent, int level)

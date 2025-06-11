@@ -32,7 +32,7 @@ int count_critical_windows(const int *readings, int size)
 			result++;
 		}
 	}
-	return (result);
+	return result;
 }
 
 int main()

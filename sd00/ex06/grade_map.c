@@ -3,65 +3,65 @@
 GradeMapperReturn plusminus_mapper(int score)
 {
 	if (score < 0 || score > 100)
-		return (NULL);
+		return NULL;
 
 	if (score < 60)
-		return ("F");
+		return "F";
 
 	if (score <= 62)
-		return ("D-");
+		return "D-";
 	if (score <= 66)
-		return ("D");
+		return "D";
 	if (score <= 69)
-		return ("D+");
+		return "D+";
 
 	if (score <= 72)
-		return ("C-");
+		return "C-";
 	if (score <= 76)
-		return ("C");
+		return "C";
 	if (score <= 79)
-		return ("C+");
+		return "C+";
 
 	if (score <= 82)
-		return ("B-");
+		return "B-";
 	if (score <= 86)
-		return ("B");
+		return "B";
 	if (score <= 89)
-		return ("B+");
+		return "B+";
 
 	if (score <= 92)
-		return ("A-");
+		return "A-";
 	if (score <= 96)
-		return ("A");
-	return ("A+");
+		return "A";
+	return "A+";
 }
 
 GradeMapperReturn passfail_mapper(int score)
 {
 	if (score < 0 || score > 100)
-		return (NULL);
+		return NULL;
 	if (score <= 60)
-		return ("F");
+		return "F";
 	if (score <= 100)
-		return ("P");
-	return (NULL);
+		return "P";
+	return NULL;
 }
 
 GradeMapperReturn standard_mapper(int score)
 {
 	if (score < 0 || score > 100)
-		return (NULL);
+		return NULL;
 	if (score < 60)
-		return ("F");
+		return "F";
 	if (score < 70)
-		return ("D");
+		return "D";
 	if (score < 80)
-		return ("C");
+		return "C";
 	if (score < 90)
-		return ("B");
+		return "B";
 	if (score <= 100)
-		return ("A");
-	return (NULL);
+		return "A";
+	return NULL;
 }
 
 void map_scores(const int *scores, int size,

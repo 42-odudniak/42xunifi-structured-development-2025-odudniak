@@ -6,18 +6,18 @@ FSNode *create_file(const char *name, int size)
 	FSNode *result = (FSNode *)malloc(sizeof(FSNode));
 
 	if (!result)
-		return (NULL);
+		return NULL;
 
 	result->name = strdup(name);
 	result->size = size;
 	result->children = NULL;
 	result->sibling = NULL;
-	return (result);
+	return result;
 }
 
 FSNode *create_folder(const char *name)
 {
-	return (create_file(name, 0));
+	return create_file(name, 0);
 }
 
 void add_child(FSNode *parent, FSNode *child)
@@ -38,10 +38,10 @@ void add_child(FSNode *parent, FSNode *child)
 
 FSNode *get_children(const FSNode *parent)
 {
-	return (parent->children);
+	return parent->children;
 }
 
 FSNode *get_sibling(const FSNode *node)
 {
-	return (node->sibling);
+	return node->sibling;
 }
