@@ -22,7 +22,7 @@ FSNode *create_folder(const char *name)
 
 void add_child(FSNode *parent, FSNode *child)
 {
-	if (!child || child->size != 0)
+	if (!child || !parent || parent->size != 0)
 		return;
 	if (!parent->children)
 	{
