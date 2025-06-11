@@ -34,10 +34,11 @@ int count_critical_windows(const int *readings, int size)
 	}
 	return result;
 }
-
+/*
 int main()
 {
 	int readings[] = {80, 70, 90, 85, 120};
 	int size = 5;
 	printf("res[%d]\n", count_critical_windows(readings, size));
 }
+*/

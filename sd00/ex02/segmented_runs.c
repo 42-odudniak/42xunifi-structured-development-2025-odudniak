@@ -40,9 +40,11 @@ int count_segments(const int *arr, int size)
 	return result;
 }
 
-// int main()
-// {
-// 	int arr[] = {-1,-1,2, 3, 4, -1, 5, 6, -1, 1, 2, 3, 4};
-// 	int size = 13;
-// 	printf("res[%d]\n", count_segments(arr, size));
-// }
+/*
+int main()
+{
+	int arr[] = {-1,-1,2, 3, 4, -1, 5, 6, -1, 1, 2, 3, 4};
+	int size = 13;
+	printf("res[%d]\n", count_segments(arr, size));
+}
+*/

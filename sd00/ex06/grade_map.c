@@ -73,6 +73,7 @@ void map_scores(const int *scores, int size,
 	}
 }
 
+/*
 int main(void)
 {
 	// Change only the array values
@@ -101,3 +102,4 @@ int main(void)
 			   mapped_standard_grades[i]);
 	}
 }
+*/
