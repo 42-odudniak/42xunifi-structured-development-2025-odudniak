@@ -79,10 +79,12 @@ PwStatus validate_password(const char *new_pw, const char *curr_pw)
 	return VALID;
 }
 
-// int main(int ac, char **av)
-// {
-// 	if (ac > 2)
-// 	{
-// 		printf("res[%d]\n", validate_password(av[1], av[2]));
-// 	}
-// }
+/*
+int main(int ac, char **av)
+{
+	if (ac > 2)
+	{
+		printf("res[%d]\n", validate_password(av[1], av[2]));
+	}
+}
+*/
