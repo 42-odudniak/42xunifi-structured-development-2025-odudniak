@@ -61,39 +61,39 @@ void free_filesystem(FSNode *node)
 	free(node);
 }
 
-int main()
-{
-	// L0
-	FSNode *root = create_folder("/");
+//int main()
+//{
+//	// L0
+//	FSNode *root = create_folder("/");
 
-	// L1
-	FSNode *l1_home = create_folder("home");
-	FSNode *l1_bin = create_folder("bin");
-	FSNode *l1_swap_img = create_file("swap.img", 512);
+//	// L1
+//	FSNode *l1_home = create_folder("home");
+//	FSNode *l1_bin = create_folder("bin");
+//	FSNode *l1_swap_img = create_file("swap.img", 512);
 
-	add_child(root, l1_bin);
-	add_child(root, l1_home);
-	add_child(root, l1_swap_img);
+//	add_child(root, l1_bin);
+//	add_child(root, l1_home);
+//	add_child(root, l1_swap_img);
 
-	// L2
-	FSNode *l2_ls = create_file("ls", 420);
-	FSNode *l2_cat = create_file("cat", 1337);
-	FSNode *l2_odudniak = create_folder("odudniak");
-	FSNode *l2_who_cache = create_file("who.cache", 1024);
+//	// L2
+//	FSNode *l2_ls = create_file("ls", 420);
+//	FSNode *l2_cat = create_file("cat", 1337);
+//	FSNode *l2_odudniak = create_folder("odudniak");
+//	FSNode *l2_who_cache = create_file("who.cache", 1024);
 
-	add_child(l1_bin, l2_cat);
-	add_child(l1_bin, l2_ls);
+//	add_child(l1_bin, l2_cat);
+//	add_child(l1_bin, l2_ls);
 
-	add_child(l1_home, l2_odudniak);
-	add_child(l1_home, l2_who_cache);
+//	add_child(l1_home, l2_odudniak);
+//	add_child(l1_home, l2_who_cache);
 
-	// L3
-	FSNode *l3_sasharm = create_file("sasharm", 15360);
+//	// L3
+//	FSNode *l3_sasharm = create_file("sasharm", 15360);
 
-	add_child(l2_odudniak, l3_sasharm);
+//	add_child(l2_odudniak, l3_sasharm);
 
-	// PRINT
-	print_structure(root, 4);
+//	// PRINT
+//	print_structure(root, 4);
 
-	free_filesystem(root);
-}
+//	free_filesystem(root);
+//}
