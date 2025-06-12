@@ -2,6 +2,8 @@
 
 static char *str_dup(const char *s)
 {
+	if (!s)
+		return NULL;
 	const size_t len = strlen(s);
 
 	char *result = (char *)malloc(sizeof(char) * (len + 1));
