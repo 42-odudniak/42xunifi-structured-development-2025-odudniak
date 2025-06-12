@@ -13,7 +13,7 @@ static char *str_dup(const char *s)
 	result[len] = '\0';
 	strncpy(result, s, len + 1);
 
-	return (result);
+	return result;
 }
 
 static GradeNode *insert_distribution_node(GradeNode **head, const char *grade)
@@ -105,7 +105,7 @@ void free_distribution(GradeNode *head)
 /*
 int main(void)
 {
-	// Change only the array values
+// Change only the array values
 	const int scores[] = {12, 53, 67, 57, 90, 99, 40};
 
 	int size = sizeof(scores) / sizeof(scores[0]);
