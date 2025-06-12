@@ -8,6 +8,7 @@ static char *str_dup(const char *s)
 	if (!result)
 		return NULL;
 
+	result[len] = '\0';
 	strncpy(result, s, len + 1);
 
 	return (result);
