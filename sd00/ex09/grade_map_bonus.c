@@ -10,8 +10,12 @@ static char *str_dup(const char *s)
 	if (!result)
 		return NULL;
 
-	result[len] = '\0';
-	strncpy(result, s, len + 1);
+	int i;
+	for (i = 0; i < len && s[i]; i++)
+	{
+		result[i] = s[i];
+	}
+	result[i] = 0;
 
 	return result;
 }
@@ -78,7 +82,6 @@ GradeNode *compute_distribution(const char **mapped_grades, int size)
 			}
 		}
 		node->occurrences++;
-
 	}
 
 	return result;
