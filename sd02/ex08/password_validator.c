@@ -62,7 +62,7 @@ PwStatus validate_password(const char *new_pw, PasswordHistory *history)
 	for (int i = 0; i < history->inserted; i++)
 	{
 		int edit_distance = calc_edit_distance(new_pw, history->last_passwords[i]);
-		printf("\e[90m\tnew_pw[%s]\thist[%s]\tedit_distance[%d]\e[0m\n", new_pw, history->last_passwords[i], edit_distance);
+//		printf("\e[90m\tnew_pw[%s]\thist[%s]\tedit_distance[%d]\e[0m\n", new_pw, history->last_passwords[i], edit_distance);
 		if (edit_distance <= 1)
 			return INVALID_SIMILAR;
 	}
